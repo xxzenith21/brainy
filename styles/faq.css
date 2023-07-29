@@ -1,0 +1,482 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Semibold';
+    src: url('Poppins-SemiBold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins-Regular', sans-serif;
+}
+
+body {
+    min-height: 100%;
+    background-image: url(../images/FAQ.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3; /* Set the opacity here */
+    background-color: #000; /* Optional background color for the overlay */
+  }
+
+
+/* NavBar */
+
+.logo {
+    position: fixed;
+    margin: 16px 36px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    top: 0;
+}
+
+.logo p {
+    float: left;
+}
+
+
+nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-family: "Poppins";
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: black;
+    padding: 0 ;
+    text-align : right;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul {
+    background : #1a2028
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+nav li:last-child{
+    margin-right: 35px;
+}
+
+nav a:hover{
+    color: #008b8b;
+}
+
+nav .active:hover{
+    color: black;
+}
+    
+nav .active {
+    background-color: #008b8b;
+    color: white;
+    padding: 10px;
+    transition: 1s;
+}
+
+/* --- Footer --- */
+
+footer {
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 30px;
+    background-color: #282b38;
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30%;
+}
+
+.footer-column {
+    flex-basis: 45%;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+        text-decoration: underline;
+    }
+
+
+/* --- FAQs--- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+
+  section {
+    margin-bottom: 30px;
+    max-width: 800px;
+  }
+  
+  section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #003399;
+  }
+  
+   section p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+    color: #555555;
+  }
+  
+ /* --- Styling for Questions--- */
+  
+  section h2:before {
+    content: "Question: ";
+    color: #003399;
+    font-weight: bold;
+  }
+  
+  /* --- Styling for Answers --- */
+  
+  section p:before {
+    content: "Answer: ";
+    font-weight: bold;
+  }
+  
+
+  /* --- Additional Styling for Question and Answer Container --- */
+
+  section {
+    margin-top: 3%;
+    margin-bottom: 0%;
+    border: 2px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: white; 
+    border-color: #020250e1;
+    border-width: 5px;
+  }
+    
+    section:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    
+    section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #003399;
+    }
+    
+    section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555555;
+    margin-bottom: 0px;
+    }
+    
+    section p:before {
+    content: "";
+    }
+    
+    /* --- Styling for Answer on Hover --- */
+    
+    section:hover p {
+    color: #003399;
+    }
+    
+    section:hover p:before {
+    content: "Answer: ";
+    font-weight: bold;
+    }
+    
+    /* --- Styling for Question on Hover --- */
+    
+    section:hover h2 {
+    color: #555555;
+    }
+    
+    section:hover h2:before {
+    content: "Question: ";
+    color: #555555;
+    }
+    
+    /* --- Styling for Section Title --- */
+    
+    h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #003399;
+    margin-bottom: 50px;
+    }
+
+     /* --- Styling for Section Title --- */
+    
+     p1 {
+        font-size: 16px;
+        text-align: center;
+        color:  #003399;
+        margin-bottom: 50px;
+        }
+/* --- Media Queries --- */
+
+/* Laptop */
+@media only screen and (max-width: 1366px) {
+  
+    }
+
+/* Tablet */
+@media only screen and (max-width: 936px) {
+    section {
+        margin-bottom: 40px;
+        max-width: 600px;
+      }
+      
+      section h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #003399;
+      }
+      
+       section p {
+        font-size: 15px;
+        text-align: justify;
+        line-height: 1.5;
+        color: #555555;
+      }
+      h1 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: #003399;
+        margin-bottom: 49px;
+    }
+    footer {
+        width: 100%;
+        height: 15vh;
+        text-align: center;
+        padding-top: 25px;
+        line-height: 25px;
+        background-color: #282b38;
+        color: white;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 25%;
+    }
+    
+    .footer-column {
+        flex-basis: 40%;
+      
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    section {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        max-width: 450px;
+      }
+      
+      section h2 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #003399;
+      }
+      
+       section p {
+        font-size: 13px;
+        text-align: justify;
+        line-height: 1.5;
+        color: #555555;
+      }
+      h1 {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        color: #003399;
+        margin-bottom: 49px;
+    }
+     p1 {
+        font-size: 15px;
+        text-align: center;
+        color:  #003399;
+        margin-bottom: 50px;
+    }
+    footer {
+        width: 100%;
+        height: 14vh;
+        text-align: center;
+        padding-top: 25px;
+        line-height: 20px;
+        background-color: #282b38;
+        color: white;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20%;
+    }
+    
+    .footer-column {
+        flex-basis: 35%;
+      
+}
+}
+
+/* Phone */
+@media only screen and (max-width: 400px) {
+    section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        max-width: 350px;
+      }
+      
+      section h2 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #003399;
+      }
+      
+       section p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 1.5;
+        color: #555555;
+      }
+      h1 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #003399;
+        margin-bottom: 25px;
+    }
+     p1 {
+        font-size: 13px;
+        text-align: center;
+        color:  #003399;
+        margin-bottom: 50px;
+    }
+    footer {
+        width: 100%;
+        height: 14vh;
+        text-align: center;
+        padding-top: 25px;
+        line-height: 20px;
+        background-color: #282b38;
+        color: white;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 15%;
+        padding-bottom: 15px;
+    }
+    
+    .footer-column {
+        flex-basis: 70%;
+    }
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0px;
+    }
+        
+        .footer-column li {
+            margin-bottom: 2px;
+    }
+        
+        .footer-column a {
+            color: #666;
+            text-decoration: none;
+    }
+        }
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 0.2px;
+}
+    .logo {
+        position: fixed;
+        margin: 15px 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }

@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Semibold';
+    src: url('Poppins-SemiBold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins-Regular', sans-serif;
+}
+
+body {
+    min-height: 100%;
+    background-image: url(../images/team.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+  }
+
+header h1 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align:left;
+    
+}
+/* NavBar */
+
+.logo {
+    position: fixed;
+    margin: 16px 36px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.logo p {
+    float: left;
+}
+
+nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-family: "Poppins";
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: black;
+    padding: 0 ;
+    text-align : right;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul {
+    background : #1a2028
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+nav li:last-child{
+    margin-right: 35px;
+}
+
+nav a:hover{
+    color: #008b8b;
+}
+
+nav .active:hover{
+    color: black;
+}
+    
+nav .active {
+    background-color: #008b8b;
+    color: white;
+    padding: 10px;
+    transition: 1s;
+}
+
+/* --- Footer --- */
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 30px;
+    background-color: #282b38;
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30%;
+}
+
+.footer-column {
+    flex-basis: 45%;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+        text-decoration: underline;
+    }
+
+/* Content */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+
+.contact-content2 p {
+    text-align: justify;
+  }
+
+  .contact-content2 { 
+	margin: auto;
+    margin-top: 200px;
+	max-width: 1200px;
+	padding: 20px;
+    padding-top: 20px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
+    margin-bottom: 160px;
+}
+
+
+h1, h2, h3 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+    color: #029fcf;
+    text-shadow: 2px 2px 0 #060f60;
+    text-align: center;
+    background-clip: text;
+    color: transparent;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+form input, form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+}
+
+body {
+    font-size: 14px;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+.logo {
+    margin: 10px 20px;
+    font-size: 20px;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1366px) {
+    .contact-content2 {
+	margin: auto;
+    margin-top: 110px;
+    margin-bottom: 50px;
+	max-width: 800px;
+	padding: 20px;
+    padding-top: px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
+	}
+
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .logo {
+        margin: 10px 20px;
+        font-size: 20px;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    footer {
+        padding-top: 20px;
+        line-height: 25px;
+    }
+      
+    .footer-column a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 936px) {
+    .contact-content2 {
+		margin-top: 100px;
+		margin-bottom: 80px;
+	}
+    
+    body {
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    .logo {
+        margin: 8px 16px;
+        font-size: 18px;
+    }
+
+    nav ul li {
+        padding: 8px;
+    }
+
+    footer {
+        padding-top: 15px;
+        line-height: 20px;
+      }
+      
+      .footer-column a {
+        font-size: 12px;
+      }
+    
+}
+
+/* Styles for devices with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+    .contact-content2 {
+        margin: auto;
+        margin-top: 110px;
+        margin-bottom: 50px;
+        max-width: 550px;
+        padding: 20px;
+        padding-top: px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px; 
+	}
+    
+    body {
+        font-size: 10px;
+    }
+
+    header h1 {
+        font-size: 16px;
+    }
+
+    .logo {
+        margin: 6px 12px;
+        font-size: 16px;
+    }
+
+    nav ul li {
+        padding: 6px;
+    }
+
+    footer {
+        padding-top: 10px;
+        line-height: 15px;
+    }
+      
+    .footer-column a {
+        font-size: 10px;
+    }
+}
+
+/* Styles for devices with a maximum width of 400px */
+@media only screen and (max-width: 400px) {
+    .contact-content2 {
+        margin: auto;
+        margin-top: 110px;
+        margin-bottom: 50px;
+        max-width: 385px;
+        padding: 20px;
+        padding-top: px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px; 
+    }
+
+    body {
+        font-size: 8px;
+    }
+
+    header h1 {
+        font-size: 14px;
+    }
+
+    .logo {
+        margin: 4px 8px;
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 10px;
+        height: 18px;
+        margin-bottom: 1px;
+    }
+    nav ul li p {
+        font-size: 7px;
+      }
+
+    nav ul li{
+        display: inline-block;
+        padding: 0px;
+    }
+
+    nav ul li a{
+        padding: 4px;
+    }
+    
+    footer {
+        padding-top: 8px;
+        line-height: 12px;
+      }
+      
+      .footer-column a {
+        font-size: 8px;
+      }
+    
+}

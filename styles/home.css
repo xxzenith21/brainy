@@ -1,0 +1,530 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Semibold';
+    src: url('Poppins-SemiBold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins-Regular', sans-serif;
+}
+
+/* --- Header --- */
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/ai_wallpaper.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 55px;
+    font-family: 'Poppins-Regular', sans-serif;
+}
+
+.greet{
+    color: black;
+    margin-top: 28vh;
+    margin-left: 10%;
+    line-height: 60px;
+}
+
+.greet h3{
+    font-size: 30px;
+    font-family: 'Poppins-Regular', sans-serif;
+}
+
+/* NavBar */
+
+.logo {
+    position: fixed;
+    margin: 16px 36px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.logo p {
+    float: left;
+}
+
+.logo img {
+    width: 50px;
+    padding-right: 15px;
+  }
+
+
+nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-family: "Poppins";
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: black;
+    padding: 0 ;
+    text-align : right;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul {
+    background : #1a2028
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+nav li:last-child{
+    margin-right: 35px;
+}
+
+nav a:hover{
+    color: #008b8b;
+}
+
+nav .active:hover{
+    color: black;
+}
+    
+nav .light {
+    background-color: #008b8b;
+    color: white;
+    padding: 10px;
+    transition: 1s;
+}
+
+.background {
+  max-width: 100%;
+  margin: 25px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+  /* Styles for the description */
+.description {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../images/ai.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+.description-content {
+    max-width: 1500px;
+    margin: 25px;
+  }
+  
+.description-content p {
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #175891 100%);
+    border: 3px solid #01024bd0;
+    margin: 25px ;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.box {
+    width: 30%; /* Each box takes up one-third of the container */
+    height: 230px; /* Set the desired height */
+    background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
+    border: 3px solid #01024bd0; /* Add borders for clarity */
+    padding: 10px; /* Add padding to create some space around the paragraph */
+    margin: 0 auto;
+}
+  
+.box p {
+    margin: 10px; /* Remove margin from the paragraph */
+  }
+
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #175891 100%);
+    border: 3px solid #01024bd0;
+    margin: 25px ;
+  }
+  
+  .video-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    text-align: center;
+    color: #000000d0;
+  }
+  
+  
+/* --- Footer --- */
+
+footer {
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 30px;
+    background-color: #282b38;
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30%;
+}
+
+.footer-column {
+    flex-basis: 45%;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+        text-decoration: underline;
+    }
+    
+.share-content{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.share-icon{
+    max-height: 45px;
+}
+
+.share-icon:hover{
+    max-height: 50px;
+    transition: 0.5s;
+}
+
+
+.reveal {
+    transform: translateY(150px);
+    transition: all 2s ease;
+    opacity: 0;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+/* Media queries for different device widths */
+@media (max-width: 1366px) {
+    /* Adjust styles for 1366px and below */
+    header h1 {
+      font-size: 40px;
+    }
+    
+    .greet h3 {
+      font-size: 25px;
+    }
+    
+    .logo {
+      font-size: 20px;
+    }
+    
+    nav ul li a {
+      font-size: 16px;
+    }
+    
+    .description-content p {
+      font-size: 16px;
+    }
+    
+    .box {
+      width: 40%;
+      height: 180px;
+    }
+    
+    .box p {
+      font-size: 14px;
+    }
+    
+    .video-container h2 {
+      font-size: 30px;
+    }
+
+    .video-container video {
+        width: 100%;
+        max-width: 100%;
+      }
+    footer {
+      padding-top: 20px;
+      line-height: 25px;
+    }
+    
+    .footer-column a {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 936px) {
+    /* Adjust styles for 936px and below */
+    header h1 {
+      font-size: 30px;
+    }
+    
+    .greet h3 {
+      font-size: 20px;
+    }
+    
+    .logo {
+      font-size: 18px;
+    }
+    
+    nav ul li a {
+      font-size: 14px;
+    }
+    
+    .description-content p {
+      font-size: 14px;
+    }
+    
+    .box {
+      width: 50%;
+      height: 150px;
+    }
+    
+    .box p {
+      font-size: 12px;
+    }
+
+    .video-container {
+        padding: 10px;
+        margin: 15px;
+      }
+    
+    .video-container h2 {
+      font-size: 24px;
+    }
+
+    .video-container video {
+        width: 100%;
+        max-width: 100%;
+      }
+    
+    footer {
+      padding-top: 15px;
+      line-height: 20px;
+    }
+    
+    .footer-column a {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* Adjust styles for 600px and below */
+    header {
+        height: 70vh;
+    }
+
+    header h1 {
+      font-size: 18px;
+    }
+
+    header h3 {
+        font-size: 24px;
+    }
+
+    .greet {
+    margin-top: 10vh;
+    margin-left: 5%;
+    line-height: 30px;
+    }
+
+    .greet h3 {
+    font-size: 15px;
+    }
+    
+    .logo {
+        position: fixed;
+        margin: 5px 15px;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    
+    nav ul li a {
+      font-size: 10px;
+    }
+
+    nav ul li p {
+        font-size: 10px;
+      }
+
+    nav ul li{
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .description-content p {
+      font-size: 12px;
+    }
+    
+    .box {
+      width: 80%;
+      height: 120px;
+    }
+    
+    .box p {
+      font-size: 10px;
+    }
+    
+    .video-container h2 {
+      font-size: 18px;
+    }
+    
+    footer {
+      padding-top: 10px;
+      line-height: 15px;
+    }
+    
+    .footer-column a {
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    /* Adjust styles for 400px and below */    
+    header {
+        width: 100%;
+        height: 50vh;
+    }
+
+    header h1 {
+      font-size: 15px;
+    }
+
+    header h3 {
+        font-size: 20px;
+    }
+
+    .greet {
+        margin-top: 10vh;
+        margin-left: 4%;
+        line-height: 20px;
+    }
+    
+    .greet h3 {
+        font-size: 10px;
+    }
+
+    .logo {
+        position: fixed;
+        margin: 5px 15px;
+        color: white;
+        font-weight: bold;
+        font-size: 8px;
+    }
+
+    .logo img {
+        width: 10px;
+        height: 18px;
+        margin-bottom: 1px;
+    }
+    
+    nav ul li a {
+      font-size: 7px;
+    }
+
+    nav ul li p {
+        font-size: 7px;
+      }
+
+    nav ul li{
+        display: inline-block;
+        padding: 0px;
+    }
+    
+    
+    .description-content p {
+      font-size: 10px;
+    }
+    
+    .box {
+      width: 90%;
+      height: 100px;
+    }
+    
+    .box p {
+      font-size: 8px;
+    }
+    
+    .video-container h2 {
+      font-size: 16px;
+    }
+    
+    footer {
+      padding-top: 8px;
+      line-height: 12px;
+    }
+    
+    .footer-column a {
+      font-size: 8px;
+    }
+  }
+
+
